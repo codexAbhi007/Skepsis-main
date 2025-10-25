@@ -23,7 +23,7 @@ interface EventsTimelineProps {
 export default function EventsTimeline({
   events,
   initialCount = 5,
-  loadIncrement = 5
+  loadIncrement = 5,
 }: EventsTimelineProps) {
   const [visibleCount, setVisibleCount] = useState<number>(initialCount);
 
@@ -39,7 +39,7 @@ export default function EventsTimeline({
   }
 
   return (
-    <section id="events" className="container mx-auto px-4 py-12">
+    <section id="events" className="container mx-auto px-4 py-12 pt-[6rem]">
       <h2 className="text-4xl md:text-5xl font-bold mb-8 flex items-center justify-center">
         Events Timeline
       </h2>
@@ -73,9 +73,15 @@ export default function EventsTimeline({
                     <p className="text-sm text-gray-500 mb-2">{ev.date}</p>
                     <h3 className="text-2xl font-semibold mb-2">{ev.title}</h3>
                     {ev.location ? (
-                      <p className="text-sm text-gray-400 mb-4">{ev.location}</p>
+                      <p className="text-sm text-gray-400 mb-4">
+                        {ev.location}
+                      </p>
                     ) : null}
-                    {ev.description ? <p className="text-gray-700 max-w-[75%]">{ev.description}</p> : null}
+                    {ev.description ? (
+                      <p className="text-gray-700 max-w-[75%]">
+                        {ev.description}
+                      </p>
+                    ) : null}
                   </div>
 
                   {/* Connector + dot in center (desktop) */}
@@ -89,20 +95,38 @@ export default function EventsTimeline({
 
                   {/* Right: image grid */}
                   <div className="md:w-1/2 order-3 md:order-3">
-                    <div className={`grid gap-2 ${images.length === 1 ? "grid-cols-1" : "grid-cols-2"}`}>
+                    <div
+                      className={`grid gap-2 ${
+                        images.length === 1 ? "grid-cols-1" : "grid-cols-2"
+                      }`}
+                    >
                       {images.length === 1 ? (
-                        <div className="w-full h-[260px] rounded-2xl overflow-hidden bg-gray-100">
-                          <Image src={images[0]} alt={ev.title} width={800} height={520} className="object-cover w-full h-full" />
+                        <div className="w-3/4 h-[260px] rounded-2xl overflow-hidden bg-gray-100">
+                          <Image
+                            src={images[0] || `./events/${ev.title}`}
+                            alt={`No Img`}
+                            width={800}
+                            height={520}
+                            className="object-cover w-full h-full"
+                          />
                         </div>
                       ) : images.length > 0 ? (
                         images.map((src, i) => (
                           <div
                             key={i}
                             className={`relative w-full h-[120px] rounded-xl overflow-hidden bg-gray-100 ${
-                              images.length === 3 && i === 0 ? "md:row-span-2 md:h-[260px]" : ""
+                              images.length === 3 && i === 0
+                                ? "md:row-span-2 md:h-[260px]"
+                                : ""
                             }`}
                           >
-                            <Image src={src} alt={`${ev.title} - ${i}`} width={600} height={400} className="object-cover w-full h-full" />
+                            <Image
+                              src={src}
+                              alt={`${ev.title} - ${i}`}
+                              width={600}
+                              height={400}
+                              className="object-cover w-full h-full"
+                            />
                           </div>
                         ))
                       ) : (
@@ -114,7 +138,6 @@ export default function EventsTimeline({
                   </div>
 
                   {/* Mobile spacing / dot */}
-                  
                 </motion.div>
               );
             })}
@@ -129,7 +152,12 @@ export default function EventsTimeline({
               className="px-6 py-3 bg-black text-white rounded-full hover:opacity-90 transition"
               aria-expanded={isAllVisible}
             >
-              {isAllVisible ? "Show less" : `See more (${Math.min(loadIncrement, events.length - visibleCount)} more)`}
+              {isAllVisible
+                ? "Show less"
+                : `See more (${Math.min(
+                    loadIncrement,
+                    events.length - visibleCount
+                  )} more)`}
             </button>
           </div>
         )}

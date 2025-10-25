@@ -16,7 +16,7 @@ export default function Home() {
       <AboutSection />
       <ClubsSection />
       <EventsTimeline events={events} />
-      <TeamsSection />
+      {/* <TeamsSection /> */}
       <FAQSection />
       <ScrollToTopButton />
     </div>
