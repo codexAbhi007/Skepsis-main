@@ -120,7 +120,7 @@ export function HeroSection() {
 
       {/* Decorative dot */}
       <div className="absolute right-40 bottom-100">
-        <div className="w-6 h-6 bg-blue-500 rounded-full" />
+        <div className="w-6 h-6 bg-blue-500 rounded-full hidden md:block" />
         <div></div>
       </div>
     </div>

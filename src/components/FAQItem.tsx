@@ -11,12 +11,7 @@ interface FAQItemProps {
   onToggle?: (id?: string | number) => void;
 }
 
-/**
- * FAQItem
- * - Classic dropdown accordion: clicking header expands/collapses DOWNWARDS only.
- * - Uses max-height transition so width/layout doesn't change.
- * - Accessible: aria-expanded / aria-controls and keyboard support (Enter/Space).
- */
+
 export function FAQItem({ id, question, answer, isOpen = false, onToggle }: FAQItemProps) {
   const contentRef = useRef<HTMLDivElement | null>(null);
   const [maxHeight, setMaxHeight] = useState<string>("0px");
@@ -26,10 +21,9 @@ export function FAQItem({ id, question, answer, isOpen = false, onToggle }: FAQI
     const el = contentRef.current;
     if (!el) return;
 
-    // When opening, set maxHeight to scrollHeight so it expands to fit content.
-    // When closing, set to 0 to collapse.
+
     if (isOpen) {
-      // allow next paint to measure correct scrollHeight (in case fonts/images just loaded)
+    
       requestAnimationFrame(() => {
         setMaxHeight(`${el.scrollHeight}px`);
       });
