@@ -1,5 +1,6 @@
 import { ScrollToTopButton } from "@/components/ScrollToTopButton";
 import { AboutSection } from "@/components/sections/About";
+import AchivementSection from "@/components/sections/Achivement";
 import { ClubsSection } from "@/components/sections/Clubs";
 import EventsTimeline from "@/components/sections/EventsNew";
 import { FAQSection } from "@/components/sections/FAQS";
@@ -16,6 +17,7 @@ export default function Home() {
       <AboutSection />
       <ClubsSection />
       <EventsTimeline events={events} />
+      <AchivementSection/>
       {/* <TeamsSection /> */}
       <FAQSection />
       <ScrollToTopButton />

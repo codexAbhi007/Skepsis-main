@@ -33,7 +33,7 @@ export function AboutSection() {
         {/* optional footer CTA row */}
         <div className="mt-8 flex flex-col md:flex-row items-center justify-center gap-4">
           <a
-            href="/join"
+            href="https://t.me/skepsis2024/"
             className="inline-block px-6 py-3 bg-black text-white rounded-full hover:opacity-95 transition"
           >
             Join Community

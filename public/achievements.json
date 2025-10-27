@@ -1,0 +1,164 @@
+[
+  {
+    "id": 1,
+    "title": "Veribee – DeSci Facilitator",
+    "teamMembers": ["Manjeet Sharma"],
+    "description": "A Web3 survey platform built in India.",
+    "achievement": "Graduated from OC Incubation (awaiting pre-valuation)"
+  },
+  {
+    "id": 2,
+    "title": "BRICS International Vocational Skills Offline Competition 2024",
+    "teamMembers": ["Soumedhik Bharati", "Jishnu Baruah"],
+    "achievement": "2nd Prize"
+  },
+  {
+    "id": 3,
+    "title": "SAP ICOE Hackathon 2024",
+    "teamMembers": ["Soumedhik Bharati", "Sohoomlal Banerjee"],
+    "achievement": "1st Place (out of 400+ teams)"
+  },
+  {
+    "id": 4,
+    "title": "Intel OneAPI Hackathon 2024",
+    "teamMembers": ["Soumedhik Bharati", "Sohoomlal Banerjee"],
+    "achievement": "1st Place (out of 100+ teams)"
+  },
+  {
+    "id": 5,
+    "title": "IEEE CIACON 2025",
+    "teamMembers": ["Soumedhik Bharati", "Sohoomlal Banerjee", "Shibam Mandal"],
+    "achievement": "Best Presenter Award for research on HCAT-Net for EEG Emotion Classification"
+  },
+  {
+    "id": 6,
+    "title": "ICDMAI 2025 & BRICS International Big Data & AI Conference and AI Working Committee",
+    "teamMembers": ["Soumedhik Bharati"],
+    "achievement": "Attendee"
+  },
+  {
+    "id": 7,
+    "title": "Loops Hacker House, Delhi",
+    "project": "Grassdotfun",
+    "achievement": "3rd Prize in Near ($500) | 3rd Prize in GolemDB ($300)",
+    "teamMembers": ["Manobendra Mandal", "Kaushik Sammadar", "Debanjan"]
+  },
+  {
+    "id": 8,
+    "title": "AIA Chain Inaugural Hackathon on HackQuest",
+    "project": "Daccy / PlAIA Zone",
+    "achievement": "$2000 (Consumer Track) for Daccy | $800 (Consumer Track) for PlAIA Zone",
+    "teamMembers": ["Debanjan Mondal", "Manobendra Mandal", "Debayan Dey"]
+  },
+  {
+    "id": 9,
+    "title": "Edu Legacy",
+    "prize": "6,000 USDT (5th Place in Earn Track)",
+    "description": "The core Edu Chain project preserving decentralized learning legacies and promoting peer-to-peer education rewards.",
+    "teamMembers": ["Manobendra Mandal", "Debayan", "Debanjan"]
+  },
+  {
+    "id": 10,
+    "title": "Linea Legacy",
+    "prize": "3,000 USDT (1st Prize)",
+    "description": "A Linea-based version of Edu Legacy, focusing on preserving educational legacies and offering tokenized proof of contribution. Integrated with MetaMask Smart Wallet and Linea chain.",
+    "teamMembers": ["Manobendra Mandal", "Debayan", "Debanjan"]
+  },
+  {
+    "id": 11,
+    "title": "Core Hacker House Bangalore",
+    "date": "March 2025",
+    "project": "Coro Tashi",
+    "prize": "1,500 CORE Tokens (2nd Prize)",
+    "description": "A decentralized liquid staking platform on Core Chain, allowing users to stake tokens, earn rewards, and delegate to validators. Features the custom Tashido reward algorithm and sustainable staking pool creation.",
+    "teamMembers": ["Manobendra Mandal", "Kaushik Sammadar", "Debanjan"]
+  },
+  {
+    "id": 12,
+    "title": "Arbitrum Stylus X Edu Chain Mini Hackathon",
+    "project": "Edu Legacy",
+    "prize": "50 USDC",
+    "description": "A decentralized educational legacy platform for preserving and sharing lifetime learnings and experiences, now on Edu Chain.",
+    "teamMembers": ["Manobendra Mandal", "Debayan", "Debanjan"]
+  },
+  {
+    "id": 13,
+    "title": "Crypted (Edu Chain)",
+    "prize": "50 USDC",
+    "description": "A ported version of Daccy on Edu Chain, offering bug-fix challenges, generative learning, and token-based rewards.",
+    "teamMembers": ["Manobendra Mandal", "Debayan", "Debanjan"]
+  },
+  {
+    "id": 14,
+    "title": "Goalzilla (Edu Chain)",
+    "prize": "50 USDC",
+    "description": "The Edu Chain version of the milestones-based crowdfunding dApp, focusing on educational projects and personal learning goals.",
+    "teamMembers": ["Manobendra Mandal", "Debayan", "Debanjan"]
+  },
+  {
+    "id": 15,
+    "title": "Telos Mini Hackathon",
+    "project": "Inherify",
+    "prize": "600 USDC",
+    "description": "A decentralized legacy management platform enabling users to create and pass on secure educational legacies using Telos blockchain. (Ported from Edu Legacy)",
+    "teamMembers": ["Manobendra Mandal", "Debayan", "Debanjan"]
+  },
+  {
+    "id": 16,
+    "title": "AIA Chain Inaugural Hackathon",
+    "teamMembers": ["Prithwish Chatterjee", "Manjeet Sharma"],
+    "achievement": "Quest Flow (Consumer Track) | Lunar Liao (GameFi Track)"
+  },
+  {
+    "id": 17,
+    "title": "ML Mania Hackathon",
+    "teamMembers": ["Sohoomlal Banerjee", "Soumedhik Bharati"],
+    "achievement": "1st Position, won $7,000"
+  },
+  {
+    "id": 18,
+    "title": "ICDMAI Hackathon",
+    "teamMembers": ["Sohoomlal Banerjee", "Soumedhik Bharati"],
+    "achievement": "3rd Place (out of 1000+ teams)",
+    "prize": "$10,000"
+  },
+  {
+    "id": 19,
+    "title": "Xavrang’25 Data Analytics Competition",
+    "teamMembers": ["Tunir Adhikary"],
+    "achievement": "Runner-Up",
+    "project": "Business Report using Power BI & Python"
+  },
+  {
+    "id": 20,
+    "title": "Hack4Bengal 3.0 - Team Skill Shift",
+    "track": "Best Use of DevPod",
+    "prize": "Amazon Voucher worth ₹5,000",
+    "teamMembers": ["Ayushi Mitra", "Siddhanta Ray", "Md Tameem Gazi", "Manjeet Sharma"],
+    "project": "Code Bounty"
+  },
+  {
+    "id": 21,
+    "title": "Hack4Bengal 3.0 - Team Shiftux",
+    "track": "Build on Solana",
+    "position": "2nd Runner-Up",
+    "prize": "$100",
+    "teamMembers": ["Prithwish Chatterjee", "Sk Wasim Razzak", "Chandreyee Shome", "Pranith Dutta"],
+    "project": "Radio"
+  },
+  {
+    "id": 22,
+    "title": "Telos Hackathon",
+    "teamMembers": ["Ayaan Adil", "Manobendra Mondal"],
+    "achievement": "3rd Position",
+    "prize": "$300"
+  },
+  {
+    "id": 23,
+    "title": "0xGasless Onchain Island Hackathon",
+    "teamMembers": ["Adrija Karmakar"],
+    "achievement": "2nd Rank (Tranche 1)",
+    "project": "Token Tracker using Avalanche and 0xGasless",
+    "prize": "$75"
+  }
+]

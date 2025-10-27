@@ -22,7 +22,7 @@ const CLUBS: Club[] = [
     tagline: "Google Developer Student Club",
     description:
       "Community for students to learn web & cloud technologies, collaborate on projects and attend workshops. We run hands-on sessions, mentorship, and collaborative builds.",
-    image: "/clubs/gdsc.jpg",
+    // image: "/clubs/gdsc.jpg",
     socials: {
       linkedin: "https://www.linkedin.com/company/gdsc/",
       instagram: "https://www.instagram.com/gdsc/",

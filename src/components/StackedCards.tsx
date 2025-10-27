@@ -27,28 +27,28 @@ const StackedCards: React.FC = () => {
   
   const people: PersonInfo[] = [
     {
-      image: "/users/jishnu.png",
-      name: "Jishnu Baruah",
+      image: "/members/Pritam.jpg",
+      name: "Pritam Paul",
       role: "President",
-      github: "https://github.com/sarahj",
-      linkedin: "https://linkedin.com/in/sarahj",
-      twitter: "https://twitter.com/sarahj"
+      github: "https://github.com/itspritam008",
+      linkedin: "https://www.linkedin.com/in/pritam--paul/",
+      twitter: "https://x.com/pritam_pau17578"
     },
     {
-      image: "https://www.profilebakery.com/wp-content/uploads/2023/08/best-ai-headshot-generators.jpeg",
-      name: "Tunir Adhikary",
+      image: "/members/Shibam.jpg",
+      name: "Shibam Mandal",
       role: "Vice President",
-      github: "https://github.com/emilyc",
-      linkedin: "https://linkedin.com/in/emilyc",
+      github: "https://github.com/mandalfy",
+      linkedin: "https://www.linkedin.com/in/mandalfy/",
       twitter: "https://twitter.com/emilyc"
     },
     {
-      image: "https://img.freepik.com/premium-photo/stylish-man-flat-vector-profile-picture-ai-generated_606187-309.jpg",
-      name: "Pritam Paul",
+      image: "/members/Barsha.jpg",
+      name: "Barsha Mishra",
       role: "Vice President",
-      github: "https://github.com/michaelr",
-      linkedin: "https://linkedin.com/in/michaelr",
-      twitter: "https://twitter.com/michaelr"
+      github: "https://github.com/barshamishra19",
+      linkedin: "https://www.linkedin.com/in/barsha-mishra-cs/",
+      twitter: "https://x.com/mish22272"
     }
   ];
 

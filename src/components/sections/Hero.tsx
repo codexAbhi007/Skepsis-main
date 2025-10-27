@@ -97,9 +97,12 @@ export function HeroSection() {
         </p>
 
         <div className="flex flex-col items-center gap-4">
-          <Button className="bg-black text-white hover:bg-black/90 px-8 py-6 text-lg transition duration-300 rounded-full hover:scale-105">
-            Join Community
-          </Button>
+          <a href="https://t.me/skepsis2024">
+            <Button className="bg-black text-white hover:bg-black/90 px-8 py-6 text-lg transition duration-300 rounded-full hover:scale-105">
+              Join Community
+            </Button>
+          </a>
+
           {/* <Link
             href="#"
             className="text-sm font-medium underline underline-offset-4 hover:text-blue-500 transition-colors duration-300"

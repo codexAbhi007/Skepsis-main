@@ -1,7 +1,7 @@
 export const content = {
   header: {
     logo: "./logo.svg",
-    navItems: ["about", "clubs", "events", "team", "contact"],
+    navItems: ["about", "clubs", "events", "team","achievements"],
     cta: "Join Our Telegram",
   },
   hero: {
@@ -31,7 +31,7 @@ export const content = {
     title: "Clubs",
   },
   footer: {
-    links: ["about", "clubs", "events", "team", "FAQ"],
+    links: ["about", "clubs", "events", "team", "FAQ","achievements"],
   },
 
   // Events data for EventsTimeline / EventsNew

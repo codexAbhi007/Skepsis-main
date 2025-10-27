@@ -14,7 +14,11 @@ export function Header() {
     <div className="sticky top-0 z-50 bg-white/90 backdrop-blur-sm shadow-sm">
       <header className="container mx-auto flex h-20 items-center justify-between px-4 md:px-8 lg:px-12">
         {/* Logo Section */}
-        <Link href="/" aria-label="Go to home" className="flex items-center gap-4">
+        <Link
+          href="/"
+          aria-label="Go to home"
+          className="flex items-center gap-4"
+        >
           <SkepsisLogo />
         </Link>
 
@@ -37,12 +41,14 @@ export function Header() {
 
         {/* Call-to-Action Button */}
         <div className="hidden md:block">
-          <Button
-            variant="secondary"
-            className="text-black border-black border-[1px] hover:bg-black/90 rounded-3xl hover:text-white hover:scale-105 hover:opacity-90 transition-transform duration-400 ease-in-out"
-          >
-            {content.header.cta}
-          </Button>
+          <a href="https://t.me/skepsis2024">
+            <Button
+              variant="secondary"
+              className="text-blue border-black border-[1px] hover:bg-black/90 rounded-3xl hover:text-white hover:scale-105 hover:opacity-90 transition-transform duration-400 ease-in-out"
+            >
+              {content.header.cta}
+            </Button>
+          </a>
         </div>
 
         {/* Hamburger Menu for Mobile */}
