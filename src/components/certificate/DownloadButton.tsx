@@ -1,9 +1,9 @@
 "use client";
 
 import { useRef } from "react";
-import { Download } from "lucide-react";
 import { getCertificateConfig } from "@/utils/getCertificateConfig";
 import { generateCertificateFromPDF } from "@/utils/generateCertificateFromPDF";
+import { Download } from "lucide-react";
 
 type Props = {
   name: string;
@@ -25,6 +25,7 @@ export default function DownloadButton({ name, rank, event }: Props) {
         name,
         templatePath: config.template,
         fontPath: config.font,
+        layout: config.layout,
       });
 
       const blob = new Blob([pdfBytes], { type: "application/pdf" });
@@ -49,8 +50,8 @@ export default function DownloadButton({ name, rank, event }: Props) {
   return (
     <button
       onClick={handleDownload}
+      className="text-blue-600 hover:text-blue-800"
       title="Download certificate"
-      className="p-2 rounded-full text-blue-600 hover:text-blue-800 hover:bg-blue-50 transition"
     >
       <Download size={18} />
     </button>
