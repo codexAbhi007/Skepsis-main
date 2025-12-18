@@ -1,7 +1,7 @@
 export const content = {
   header: {
     logo: "./logo.svg",
-    navItems: ["about", "clubs", "events", "team","achievements"],
+    navItems: ["about", "clubs", "events", "team","achievements","certificate"],
     cta: "Join Our Telegram",
   },
   hero: {

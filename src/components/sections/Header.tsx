@@ -31,7 +31,13 @@ export function Header() {
           {content.header.navItems.map((item) => (
             <Link
               key={item}
-              href={item === "team" ? "/teams" : `/#${item}`}
+              href={
+                item === "team"
+                  ? "/teams"
+                  : item === "certificate"
+                  ? "/certificate"
+                  : `/#${item}`
+              }
               className="text-sm font-medium capitalize text-gray-900 hover:text-gray-600 transition-colors duration-200 ease-in-out py-2 md:py-0 px-4 md:px-0"
             >
               {item}

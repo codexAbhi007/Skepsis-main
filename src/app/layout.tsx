@@ -36,7 +36,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} min-h-screen w-full bg-gray-50 text-gray-900 antialiased flex flex-col`}
         style={{ fontFeatureSettings: '"kern"' }}
       >
-        {/* 🔥 Client component to handle refresh behavior */}
+       
         <HashRemover />
 
         <Header />
