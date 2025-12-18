@@ -19,26 +19,26 @@ export function getCertificateConfig(
       x: 420,
       y: 280,
       fontSize: 46,
-      color: [0.027, 0.243, 0.475], // blue-ish (matches Canva)
+      color: [0.027, 0.243, 0.475], 
     };
 
     if (rank === 1)
       return {
-        template: "/certificates/cquest/rank1.pdf",
+        template: "/certificates/cquest/participation.pdf",
         font: "/certificates/cquest/Montserrat-BoldItalic.ttf",
         layout: baseLayout,
       };
 
     if (rank === 2)
       return {
-        template: "/certificates/cquest/rank2.pdf",
+        template: "/certificates/cquest/participation.pdf",
         font: "/certificates/cquest/Montserrat-BoldItalic.ttf",
         layout: baseLayout,
       };
 
     if (rank === 3)
       return {
-        template: "/certificates/cquest/rank3.pdf",
+        template: "/certificates/cquest/participation.pdf",
         font: "/certificates/cquest/Montserrat-BoldItalic.ttf",
         layout: baseLayout,
       };
@@ -63,21 +63,21 @@ export function getCertificateConfig(
 
   if (rank === 1)
     return {
-      template: "/certificates/dsaquest/rank1.pdf",
+      template: "/certificates/dsaquest/participation.pdf",
       font: "/certificates/dsaquest/AlexBrush-Regular.ttf",
       layout: dsaLayout,
     };
 
   if (rank === 2)
     return {
-      template: "/certificates/dsaquest/rank2.pdf",
+      template: "/certificates/dsaquest/participation.pdf",
       font: "/certificates/dsaquest/AlexBrush-Regular.ttf",
       layout: dsaLayout,
     };
 
   if (rank === 3)
     return {
-      template: "/certificates/dsaquest/rank3.pdf",
+      template: "/certificates/dsaquest/participation.pdf",
       font: "/certificates/dsaquest/AlexBrush-Regular.ttf",
       layout: dsaLayout,
     };

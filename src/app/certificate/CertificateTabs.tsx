@@ -1,20 +1,30 @@
 "use client";
 
-import { useState } from "react";
-import ParticipantList from "@/components/certificate/ParticipantList";
-import cQuest from "@/data/certificates/c-quest.json";
-import dsaQuest from "@/data/certificates/dsa-quest.json";
+import { useState, useMemo } from "react";
+import CertificateGenerator from "@/components/certificate/CertificateGenerator";
+
+import cQuestData from "@/data/certificates/c-quest.json";
+import dsaQuestData from "@/data/certificates/dsa-quest.json";
 
 export default function CertificateTabs() {
   const [event, setEvent] = useState<"cquest" | "dsaquest">("cquest");
 
+  // 🔒 force correct data binding
+  const participants = useMemo(() => {
+    return event === "cquest" ? cQuestData : dsaQuestData;
+  }, [event]);
+
   return (
-    <div>
-      <div className="flex gap-4 mb-6">
+    <div className="space-y-6">
+      <h1 className="text-3xl font-semibold">Certificates</h1>
+
+      <div className="flex gap-3">
         <button
           onClick={() => setEvent("cquest")}
           className={`px-4 py-2 rounded ${
-            event === "cquest" ? "bg-blue-600 text-white" : "bg-gray-200"
+            event === "cquest"
+              ? "bg-blue-600 text-white"
+              : "bg-gray-200"
           }`}
         >
           C Quest
@@ -23,16 +33,18 @@ export default function CertificateTabs() {
         <button
           onClick={() => setEvent("dsaquest")}
           className={`px-4 py-2 rounded ${
-            event === "dsaquest" ? "bg-blue-600 text-white" : "bg-gray-200"
+            event === "dsaquest"
+              ? "bg-blue-600 text-white"
+              : "bg-gray-200"
           }`}
         >
           DSA Quest
         </button>
       </div>
 
-      <ParticipantList
-        data={event === "cquest" ? cQuest : dsaQuest}
+      <CertificateGenerator
         event={event}
+        participants={participants}
       />
     </div>
   );
