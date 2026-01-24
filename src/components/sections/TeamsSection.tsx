@@ -1,10 +1,11 @@
-import { MemberCard } from "../MemberCard" 
+import { MemberCard } from "../MemberCard";
 
 const teamMembers = [
   {
     name: "Prithwish Chaterjee",
     role: "Web Developer",
-    description: "A self-proclaimed MERN Stack Developer with a passion for building dynamic web applications. Skilled in JavaScript, React, Node.js, and MongoDB, he thrives on creating user-friendly platforms.",
+    description:
+      "A self-proclaimed MERN Stack Developer with a passion for building dynamic web applications. Skilled in JavaScript, React, Node.js, and MongoDB, he thrives on creating user-friendly platforms.",
     linkedin: "https://linkedin.com/johndoe",
     github: "https://github.com/prithwish",
     twitter: "https://twitter.com/prithwish",
@@ -13,7 +14,8 @@ const teamMembers = [
   {
     name: "Manobendra Mandal",
     role: "Web Developer",
-    description: "A final year BCA student passionate about programming, web development, and blockchain technologies. Experienced with JavaScript, Python, Solidity, and Web3, focusing on decentralized applications (DApps).",
+    description:
+      "A final year BCA student passionate about programming, web development, and blockchain technologies. Experienced with JavaScript, Python, Solidity, and Web3, focusing on decentralized applications (DApps).",
     linkedin: "https://linkedin.com/janesmith",
     github: "https://github.com/manobendra",
     twitter: "https://twitter.com/manobendra",
@@ -22,7 +24,8 @@ const teamMembers = [
   {
     name: "Manjeet Sharma",
     role: "Backend Developer",
-    description: "Backend Developer with expertise in building scalable systems and shipping multiple projects. Known for handling complex backends and ensuring smooth integrations across various platforms.",
+    description:
+      "Backend Developer with expertise in building scalable systems and shipping multiple projects. Known for handling complex backends and ensuring smooth integrations across various platforms.",
     linkedin: "https://linkedin.com/michaelbrown",
     github: "https://github.com/manjeet",
     twitter: "https://twitter.com/manjeet",
@@ -31,7 +34,8 @@ const teamMembers = [
   {
     name: "Mouli Chakraborty",
     role: "Project Manager",
-    description: "Project Manager who excels at leading teams, ensuring efficient collaboration, and overseeing project execution. Focuses on managing timelines and delivering high-quality results with strong leadership.",
+    description:
+      "Project Manager who excels at leading teams, ensuring efficient collaboration, and overseeing project execution. Focuses on managing timelines and delivering high-quality results with strong leadership.",
     linkedin: "https://linkedin.com/sarahdavis",
     github: "https://github.com/mouli",
     twitter: "https://twitter.com/mouli",
@@ -40,7 +44,8 @@ const teamMembers = [
   {
     name: "Jishnu Baruah",
     role: "President",
-    description: "BTech AI/ML student passionate about hackathons and solving real-world problems through technology. As the President, he brings strong leadership skills, guiding teams towards innovative solutions.",
+    description:
+      "BTech AI/ML student passionate about hackathons and solving real-world problems through technology. As the President, he brings strong leadership skills, guiding teams towards innovative solutions.",
     linkedin: "https://linkedin.com/sarahdavis",
     github: "https://github.com/jishnu",
     twitter: "https://twitter.com/jishnu",
@@ -49,7 +54,8 @@ const teamMembers = [
   {
     name: "Raj Sharma",
     role: "Web Dev Helper",
-    description: "A Web Development helper with a unique, laid-back approach to problem-solving. Eager to contribute to team projects, Raj is always ready to offer support and collaborate on creating great solutions.",
+    description:
+      "A Web Development helper with a unique, laid-back approach to problem-solving. Eager to contribute to team projects, Raj is always ready to offer support and collaborate on creating great solutions.",
     linkedin: "https://linkedin.com/sarahdavis",
     github: "https://github.com/rajsharma",
     twitter: "https://twitter.com/rajsharma",
@@ -58,7 +64,8 @@ const teamMembers = [
   {
     name: "Abhirup Banerjee",
     role: "Blockchain Developer and Researcher",
-    description: "BTech student focused on blockchain development and eager to explore innovative technologies. He is passionate about leveraging his skills in emerging fields to contribute to future advancements.",
+    description:
+      "BTech student focused on blockchain development and eager to explore innovative technologies. He is passionate about leveraging his skills in emerging fields to contribute to future advancements.",
     linkedin: "https://linkedin.com/sarahdavis",
     github: "https://github.com/abhirup",
     twitter: "https://twitter.com/abhirup",
@@ -67,23 +74,25 @@ const teamMembers = [
   {
     name: "Bidish Chakraborty",
     role: "PR Team",
-    description: "PR Team member with a keen interest in hackathons and public relations. Focuses on building relationships and promoting projects, ensuring effective communication with the audience and stakeholders.",
+    description:
+      "PR Team member with a keen interest in hackathons and public relations. Focuses on building relationships and promoting projects, ensuring effective communication with the audience and stakeholders.",
     linkedin: "https://linkedin.com/sarahdavis",
     github: "https://github.com/bidish",
     twitter: "https://twitter.com/bidish",
     imageUrl: "/users/bidish.png",
   },
-]
-
+];
 
 export function TeamsSection() {
   return (
     <section className="container py-16 md:py-24">
       <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-16">
-        <h2 className="text-3xl md:text-4xl font-bold">Meet Our Team</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
+          Meet Our Team
+        </h2>
         <div className="relative w-12 h-8">
-          <div className="absolute left-0 w-8 h-8 bg-pink-400 rounded-full opacity-75" />
-          <div className="absolute right-0 w-8 h-8 bg-blue-400 rounded-full opacity-75 mix-blend-multiply" />
+          <div className="absolute left-0 w-8 h-8 bg-pink-400 dark:bg-pink-600 rounded-full opacity-75" />
+          <div className="absolute right-0 w-8 h-8 bg-blue-400 dark:bg-blue-600 rounded-full opacity-75 mix-blend-multiply" />
         </div>
       </div>
 
@@ -91,6 +100,5 @@ export function TeamsSection() {
         <MemberCard members={teamMembers} />
       </div>
     </section>
-  )
+  );
 }
-

@@ -35,12 +35,12 @@ export default function CertificateGenerator({ event }: Props) {
       <NameAutocomplete
         participants={participants}
         onSelect={setSelected}
-        resetKey={event} 
+        resetKey={event}
       />
 
       {/* Preview */}
-      <div className="border rounded p-4 text-center bg-gray-50">
-        <p className="text-sm text-gray-500 mb-3">
+      <div className="border border-gray-200 dark:border-gray-700 rounded p-4 text-center bg-gray-50 dark:bg-gray-800">
+        <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">
           Sample Certificate Preview
         </p>
 

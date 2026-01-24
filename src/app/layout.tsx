@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} min-h-screen w-full bg-gray-50 text-gray-900 antialiased flex flex-col`}
+        className={`${geistSans.variable} ${geistMono.variable} min-h-screen w-full bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 antialiased flex flex-col`}
         style={{ fontFeatureSettings: '"kern"' }}
       >
        

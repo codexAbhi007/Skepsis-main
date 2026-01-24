@@ -51,7 +51,7 @@ export default function DownloadButton({ name, rank, event }: Props) {
   return (
     <button
       onClick={handleDownload}
-      className="inline-flex items-center gap-2 px-5 py-2 rounded bg-blue-600 text-white hover:bg-blue-700"
+      className="inline-flex items-center gap-2 px-5 py-2 rounded bg-blue-600 dark:bg-blue-700 text-white hover:bg-blue-700 dark:hover:bg-blue-800 transition-colors"
     >
       <Download size={18} />
       Generate Certificate

@@ -9,7 +9,8 @@ export function ScrollToTopButton() {
   // Track scroll position to show/hide the scroll button
   useEffect(() => {
     const handleScroll = () => {
-      const heroSectionHeight = document.querySelector("#hero-section")?.offsetHeight || 0;
+      const heroSectionHeight =
+        document.querySelector("#hero-section")?.offsetHeight || 0;
       setShowScrollToTop(window.scrollY > heroSectionHeight);
     };
 
@@ -27,10 +28,16 @@ export function ScrollToTopButton() {
   return (
     <button
       onClick={scrollToTop}
-      className="fixed flex items-center justify-center font-extrabold h-12 w-12 bottom-8 right-8 z-50 bg-blue-500 text-white rounded-full p-3 transition-transform transform hover:scale-105 hover:shadow-xl hover:bg-blue-600 shadow-lg"
+      className="fixed flex items-center justify-center font-extrabold h-12 w-12 bottom-8 right-8 z-50 bg-blue-500 dark:bg-blue-600 text-white rounded-full p-3 transition-transform transform hover:scale-105 hover:shadow-xl hover:bg-blue-600 dark:hover:bg-blue-700 shadow-lg"
       aria-label="Scroll to Top"
     >
-      <Image src={"/arrow-up.png"} className="invert" width={80} height={80} alt="^" />
+      <Image
+        src={"/arrow-up.png"}
+        className="invert"
+        width={80}
+        height={80}
+        alt="^"
+      />
     </button>
   );
 }

@@ -59,17 +59,23 @@ export default function AchivementSection() {
           String(it.achievement || it.prize || it.project || "")
             .toLowerCase()
             .includes(qLower) ||
-          (it.teamMembers || []).some((m) => m.toLowerCase().includes(qLower)) ||
-          String(it.description || "").toLowerCase().includes(qLower)
+          (it.teamMembers || []).some((m) =>
+            m.toLowerCase().includes(qLower),
+          ) ||
+          String(it.description || "")
+            .toLowerCase()
+            .includes(qLower)
         );
-      })
+      }),
     );
   }, [q, items]);
 
   if (loading) {
     return (
       <section className="py-12 px-4 container mx-auto">
-        <div className="text-center text-gray-600">Loading achievements…</div>
+        <div className="text-center text-gray-600 dark:text-gray-400">
+          Loading achievements…
+        </div>
       </section>
     );
   }
@@ -77,7 +83,9 @@ export default function AchivementSection() {
   if (error) {
     return (
       <section className="py-12 px-4 container mx-auto">
-        <div className="text-center text-red-600">Error: {error}</div>
+        <div className="text-center text-red-600 dark:text-red-400">
+          Error: {error}
+        </div>
       </section>
     );
   }
@@ -85,8 +93,12 @@ export default function AchivementSection() {
   return (
     <section id="achievements" className="py-12 px-4 container mx-auto">
       <div className="max-w-5xl mx-auto text-center mb-8">
-        <h2 className="text-3xl md:text-4xl font-bold">Achievements & Hackathon Wins</h2>
-        <p className="text-gray-600 mt-2">Recent accomplishments by Skepsis members and teams.</p>
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
+          Achievements & Hackathon Wins
+        </h2>
+        <p className="text-gray-600 dark:text-gray-400 mt-2">
+          Recent accomplishments by Skepsis members and teams.
+        </p>
       </div>
 
       <div className="max-w-7xl mx-auto mb-8">
@@ -96,12 +108,12 @@ export default function AchivementSection() {
               value={q}
               onChange={(e) => setQ(e.target.value)}
               placeholder="Search by title, team member, prize or project..."
-              className="w-full rounded-full border border-gray-200 px-4 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-300"
+              className="w-full rounded-full border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 px-4 py-2 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-300 dark:focus:ring-indigo-600"
             />
           </div>
 
           <div className="flex items-center gap-3 mt-3 sm:mt-0">
-            <div className="text-sm text-gray-500 hidden sm:block">
+            <div className="text-sm text-gray-500 dark:text-gray-400 hidden sm:block">
               {filtered.length} result{filtered.length !== 1 ? "s" : ""}
             </div>
             <button
@@ -109,7 +121,7 @@ export default function AchivementSection() {
                 setQ("");
                 setFiltered(items);
               }}
-              className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm hover:shadow-sm transition"
+              className="px-4 py-2 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-full text-sm text-gray-900 dark:text-white hover:shadow-sm transition"
             >
               Reset
             </button>
@@ -121,7 +133,7 @@ export default function AchivementSection() {
         {filtered.map((a) => (
           <article
             key={a.id}
-            className="relative bg-white rounded-2xl p-5 shadow-sm hover:shadow-md transition flex flex-col"
+            className="relative bg-white dark:bg-gray-800 rounded-2xl p-5 shadow-sm hover:shadow-md transition flex flex-col"
           >
             <div className="flex items-start gap-3">
               <div className="flex-none w-12 h-12 rounded-lg bg-gradient-to-br from-indigo-500 to-cyan-400 flex items-center justify-center text-white">
@@ -129,8 +141,10 @@ export default function AchivementSection() {
               </div>
 
               <div className="flex-1">
-                <h3 className="text-lg font-semibold leading-snug">{a.title}</h3>
-                <div className="flex items-center gap-3 mt-2 text-xs text-gray-500">
+                <h3 className="text-lg font-semibold leading-snug text-gray-900 dark:text-white">
+                  {a.title}
+                </h3>
+                <div className="flex items-center gap-3 mt-2 text-xs text-gray-500 dark:text-gray-400">
                   <span className="inline-flex items-center gap-1">
                     <Users size={14} />
                     {(a.teamMembers || []).slice(0, 3).join(", ") || "—"}
@@ -145,29 +159,43 @@ export default function AchivementSection() {
               </div>
             </div>
 
-            <div className="mt-4 text-sm text-gray-700 flex-1">
+            <div className="mt-4 text-sm text-gray-700 dark:text-gray-300 flex-1">
               {a.achievement ? (
-                <p className="font-medium text-gray-800">{a.achievement}</p>
+                <p className="font-medium text-gray-800 dark:text-gray-200">
+                  {a.achievement}
+                </p>
               ) : a.prize ? (
-                <p className="font-medium text-gray-800">{a.prize}</p>
+                <p className="font-medium text-gray-800 dark:text-gray-200">
+                  {a.prize}
+                </p>
               ) : a.project ? (
-                <p className="font-medium text-gray-800">Project: {a.project}</p>
+                <p className="font-medium text-gray-800 dark:text-gray-200">
+                  Project: {a.project}
+                </p>
               ) : null}
 
               {a.description && (
-                <p className="mt-2 text-sm text-gray-600 line-clamp-4">{a.description}</p>
+                <p className="mt-2 text-sm text-gray-600 dark:text-gray-400 line-clamp-4">
+                  {a.description}
+                </p>
               )}
 
               {a.track && (
-                <p className="mt-2 text-xs text-indigo-600 font-medium">Track: {a.track}</p>
+                <p className="mt-2 text-xs text-indigo-600 dark:text-indigo-400 font-medium">
+                  Track: {a.track}
+                </p>
               )}
             </div>
 
             <div className="mt-4 flex items-center justify-between">
-              <div className="text-xs text-gray-500">#{String(a.id).padStart(2, "0")}</div>
+              <div className="text-xs text-gray-500 dark:text-gray-400">
+                #{String(a.id).padStart(2, "0")}
+              </div>
               <details className="text-sm">
-                <summary className="cursor-pointer text-indigo-600 hover:underline">Details</summary>
-                <div className="mt-2 text-sm text-gray-700">
+                <summary className="cursor-pointer text-indigo-600 dark:text-indigo-400 hover:underline">
+                  Details
+                </summary>
+                <div className="mt-2 text-sm text-gray-700 dark:text-gray-300">
                   {a.description && <div className="mb-2">{a.description}</div>}
                   {a.project && (
                     <div className="text-sm">
@@ -176,7 +204,8 @@ export default function AchivementSection() {
                   )}
                   {a.achievement && (
                     <div className="text-sm">
-                      <span className="font-medium">Achievement:</span> {a.achievement}
+                      <span className="font-medium">Achievement:</span>{" "}
+                      {a.achievement}
                     </div>
                   )}
                   {a.prize && (
@@ -186,12 +215,14 @@ export default function AchivementSection() {
                   )}
                   {a.position && (
                     <div className="text-sm">
-                      <span className="font-medium">Position:</span> {a.position}
+                      <span className="font-medium">Position:</span>{" "}
+                      {a.position}
                     </div>
                   )}
                   {a.teamMembers && a.teamMembers.length > 0 && (
                     <div className="text-sm mt-2">
-                      <span className="font-medium">Team:</span> {a.teamMembers.join(", ")}
+                      <span className="font-medium">Team:</span>{" "}
+                      {a.teamMembers.join(", ")}
                     </div>
                   )}
                 </div>
@@ -202,7 +233,9 @@ export default function AchivementSection() {
       </div>
 
       {filtered.length === 0 && (
-        <div className="mt-8 text-center text-gray-600">No achievements found.</div>
+        <div className="mt-8 text-center text-gray-600 dark:text-gray-400">
+          No achievements found.
+        </div>
       )}
     </section>
   );
