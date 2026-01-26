@@ -96,19 +96,18 @@ export function HeroSection() {
           {content.hero.description}
         </p>
 
-        <div className="flex flex-col items-center gap-4">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a href="https://t.me/skepsis2024">
             <Button className="bg-black dark:bg-white text-white dark:text-black hover:bg-black/90 dark:hover:bg-gray-200 px-8 py-6 text-lg transition duration-300 rounded-full hover:scale-105">
               Join Community
             </Button>
           </a>
 
-          {/* <Link
-            href="#"
-            className="text-sm font-medium underline underline-offset-4 hover:text-blue-500 transition-colors duration-300"
-          >
-            See more details about us
-          </Link> */}
+          <Link href="/project-dev-rush">
+            <Button className="bg-white dark:bg-gray-900 text-blue-500 dark:text-blue-400 border-2 border-blue-500 dark:border-blue-400 hover:bg-blue-500 dark:hover:bg-blue-500 hover:text-white dark:hover:text-white px-8 py-6 text-lg transition duration-300 rounded-full hover:scale-105">
+              Project Dev Rush
+            </Button>
+          </Link>
         </div>
       </div>
 

@@ -23,6 +23,9 @@ export const metadata: Metadata = {
   title: "SKEPSIS | TECHNICAL COMMITTEE OF SNU",
   description:
     "The official website of the Skepsis technical committee at Sister Nivedita University.",
+  icons:{
+      icon: "/favicon.svg",
+  }
 };
 
 export default function RootLayout({

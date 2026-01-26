@@ -1,7 +1,7 @@
 export const content = {
   header: {
     logo: "./logo.svg",
-    navItems: ["about", "clubs", "events", "team","achievements","certificate"],
+    navItems: ["about", "clubs", "events", "team","achievements","certificate","PDR"],
     cta: "Join Our Telegram",
   },
   hero: {
@@ -176,6 +176,13 @@ export const content = {
     date: "16/02–23/03/2025",
     description: "Co-organized bootcamp on linear data structures and algorithmic problem-solving.",
     image: "./events/DSA Bootcamp (SKEPSIS x GFG).png"
+  },
+  {
+    id: 21,
+    title: "Project Dev Rush 2026",
+    date: "01/02/2026",
+    description: "Month-long bootcamp with Web Dev & ML tracks, hands-on projects, and expert sessions.",
+    image: "./events/Project Dev Rush 2026.jpeg"
   }
 ]
 

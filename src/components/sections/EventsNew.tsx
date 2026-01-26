@@ -27,10 +27,31 @@ export default function EventsTimeline({
 }: EventsTimelineProps) {
   const [visibleCount, setVisibleCount] = useState<number>(initialCount);
 
+  // Helper function to parse DD/MM/YYYY format and date ranges
+  const parseDate = (dateString: string): number => {
+    // Extract year from the entire string (works for all formats)
+    const yearMatch = dateString.match(/(\d{4})/);
+    const year = yearMatch ? parseInt(yearMatch[1]) : new Date().getFullYear();
+
+    // Extract the first date part (before any range or separator)
+    const firstDatePart = dateString.split(/[–\-\s&]/)[0].trim();
+    const parts = firstDatePart.split("/").map(Number);
+
+    const day = parts[0];
+    // If month is not in the first part, try to extract it from the full string
+    let month = parts[1];
+    if (!month) {
+      const monthMatch = dateString.match(/\/(\d{1,2})/);
+      month = monthMatch ? parseInt(monthMatch[1]) : new Date().getMonth() + 1;
+    }
+
+    return new Date(year, month - 1, day).getTime();
+  };
+
   // Sort events by date (latest first)
   const sortedEvents = [...events].sort((a, b) => {
-    const dateA = new Date(a.date).getTime();
-    const dateB = new Date(b.date).getTime();
+    const dateA = parseDate(a.date);
+    const dateB = parseDate(b.date);
     return dateB - dateA; // Descending order (latest first)
   });
 

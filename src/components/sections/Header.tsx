@@ -63,6 +63,8 @@ export function Header() {
               href={
                 item === "team"
                   ? "/teams"
+                  : item === "PDR"
+                  ? "/project-dev-rush"
                   : item === "certificate"
                     ? "/certificate"
                     : `/#${item}`
