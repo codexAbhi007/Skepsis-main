@@ -198,6 +198,18 @@ export function ProjectDevRushHero() {
               </div>
             ))}
           </div>
+
+          {/* Register Now Button */}
+          <motion.a
+            href="https://luma.com/tx5pwhec"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mt-8 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold text-lg rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Register Now
+          </motion.a>
         </div>
       </div>
 
