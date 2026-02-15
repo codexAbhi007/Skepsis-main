@@ -16,8 +16,8 @@ export default function ProjectDevRushPage() {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-950">
       <ProjectDevRushHero />
-      <ProjectTracksSection />
-      <SessionTimelineSection />
+      {/* <ProjectTracksSection /> */}
+      {/* <SessionTimelineSection /> */}
       <PrerequisitesSection />
       <FAQSection />
       <LearningResourcesSection />
