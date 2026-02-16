@@ -155,9 +155,9 @@ export function ProjectDevRushHero() {
       <div className="hidden sm:block absolute right-20 bottom-1/3 w-6 h-6 bg-blue-600 rounded-full"></div>
 
       <div className="text-center space-y-8 max-w-3xl mx-auto relative z-10">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white">
+        {/* <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white">
           {projectDevRushData.hero.title}
-        </h1>
+        </h1> */}
 
         {/* TEMPORARY: Countdown + date + register button hidden (DO NOT DELETE) */}
         {/*
@@ -205,7 +205,7 @@ export function ProjectDevRushHero() {
         */}
 
         {/* TEMPORARY MESSAGE */}
-        <p className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(168,85,247,0.35)]">
+        <p className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(168,85,247,0.35)]">
           We will be back soon...
         </p>
       </div>
