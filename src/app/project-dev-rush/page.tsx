@@ -1,6 +1,7 @@
 import { ProjectDevRushHero } from "@/components/sections/ProjectDevRush/HeroSection";
 import { ProjectTracksSection } from "@/components/sections/ProjectDevRush/ProjectTracksSection";
 import { SessionTimelineSection } from "@/components/sections/ProjectDevRush/SessionTimelineSection";
+import { SpeakersSection } from "@/components/sections/ProjectDevRush/SpeakersSection";
 import { PrerequisitesSection } from "@/components/sections/ProjectDevRush/PrerequisitesSection";
 import { FAQSection } from "@/components/sections/ProjectDevRush/FAQSection";
 import { LearningResourcesSection } from "@/components/sections/ProjectDevRush/LearningResourcesSection";
@@ -18,6 +19,7 @@ export default function ProjectDevRushPage() {
       <ProjectDevRushHero />
       {/* <ProjectTracksSection /> */}
       {/* <SessionTimelineSection /> */}
+      <SpeakersSection />
       <PrerequisitesSection />
       <FAQSection />
       <LearningResourcesSection />

@@ -19,6 +19,7 @@ export function ProjectDevRushHero() {
     minutes: 0,
     seconds: 0,
   });
+  const [nextSessionTitle, setNextSessionTitle] = useState<string>("");
 
   useEffect(() => {
     const calculateTimeLeft = () => {
@@ -95,18 +96,23 @@ export function ProjectDevRushHero() {
           );
 
           if (sessionDate > currentDate) {
-            return sessionDate.getTime();
+            return { time: sessionDate.getTime(), title: session.title };
           }
         }
 
-        return new Date(currentYear, 0, 3, 19, 0, 0).getTime();
+        return {
+          time: new Date(currentYear, 2, 25, 19, 0, 0).getTime(),
+          title: "Orientation",
+        };
       };
 
-      const targetDate = getTargetDate();
+      const targetInfo = getTargetDate();
+      const targetDate = targetInfo.time;
       const now = new Date().getTime();
       const difference = targetDate - now;
 
       if (difference > 0) {
+        setNextSessionTitle(targetInfo.title);
         setTimeLeft({
           days: Math.floor(difference / (1000 * 60 * 60 * 24)),
           hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
@@ -158,14 +164,22 @@ export function ProjectDevRushHero() {
         </h1>
 
         {/* TEMPORARY: Countdown + date + register button hidden (DO NOT DELETE) */}
-        
+
         <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400">
           {projectDevRushData.hero.dateRange}
         </p>
 
         <div>
-          <p className="text-base md:text-lg text-gray-600 dark:text-gray-400 mb-6">
-            {projectDevRushData.hero.countdownMessage}
+          <p className="text-base md:text-xl text-gray-600 dark:text-gray-400 mb-6">
+            Next session{" "}
+            {nextSessionTitle ? (
+              <span className="font-semibold text-blue-600 dark:text-blue-400">
+                {nextSessionTitle}
+              </span>
+            ) : (
+              ""
+            )}{" "}
+            starting in
           </p>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-6 max-w-2xl mx-auto">
@@ -177,12 +191,17 @@ export function ProjectDevRushHero() {
             ].map((item) => (
               <div
                 key={item.label}
-                className="bg-blue-700 dark:bg-gray-900 border-2 border-blue-800 dark:border-blue-600 rounded-lg md:rounded-xl p-4 md:p-6 flex flex-col items-center shadow-lg"
+                className="bg-blue-700 dark:bg-gray-900 border-2 border-blue-800
+                 dark:border-blue-600 rounded-lg md:rounded-xl p-4 md:p-6 flex flex-col
+                  items-center shadow-lg"
               >
                 <span className="text-2xl md:text-4xl font-bold text-white">
                   {String(item.value).padStart(2, "0")}
                 </span>
-                <span className="text-xs md:text-sm text-blue-100 dark:text-gray-400 mt-2">
+                <span
+                  className="text-xs md:text-sm text-blue-100 dark:text-gray-400
+                 mt-2"
+                >
                   {item.label}
                 </span>
               </div>
@@ -200,7 +219,6 @@ export function ProjectDevRushHero() {
             Register Now
           </motion.a>
         </div>
-       
 
         {/* TEMPORARY MESSAGE */}
         {/* <p className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(168,85,247,0.35)]">
