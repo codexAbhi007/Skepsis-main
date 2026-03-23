@@ -1,0 +1,124 @@
+[
+  {
+    "date": "25th Mar",
+    "time": "7:00 PM",
+    "title": "Orientation",
+    "speakers": [
+      {
+        "name": "Snehendu Roy",
+        "image": "/project_dev_rush_speakers/Snehendu_Roy.jpeg"
+      },
+      {
+        "name": "Abhirup Banerjee",
+        "image": "/project_dev_rush_speakers/Abhirup_Banerjee.jpeg"
+      }
+    ]
+  },
+  {
+    "date": "28th Mar",
+    "time": "7:00 PM",
+    "title": "HTML & CSS",
+    "speakers": [
+      {
+        "name": "Jishnu Baruah",
+        "image": "/project_dev_rush_speakers/Jishnu_Baruah.jpeg"
+      }
+    ]
+  },
+  {
+    "date": "29th Mar",
+    "time": "7:00 PM",
+    "title": "Javascript Part 1",
+    "speakers": [
+        {
+            "name": "Manobendra Mandal",
+            "image": "/project_dev_rush_speakers/Manobendra_Mandal.jpeg"
+        }
+    ]
+  },
+  {
+    "date": "1st Apr",
+    "time": "7:00 PM",
+    "title": "Javascript Part 2",
+    "speakers": [
+      {
+        "name": "Dipan Srimany",
+        "image": "/project_dev_rush_speakers/Dipan_Srimany.jpeg"
+      }
+    ]
+  },
+  {
+    "date": "4th Apr",
+    "time": "7:00 PM",
+    "title": "Express, Node (Backend)",
+    "speakers": [
+      {
+        "name": "Snehendu Roy",
+        "image": "/project_dev_rush_speakers/Snehendu_Roy.jpeg"
+      },
+      {
+        "name": "Dipan Srimany",
+        "image": "/project_dev_rush_speakers/Dipan_Srimany.jpeg"
+      }
+    ]
+  },
+  {
+    "date": "5th Apr",
+    "time": "7:00 PM",
+    "title": "Database (Backend)",
+    "speakers": [
+      {
+        "name": "Snehendu Roy",
+        "image": "/project_dev_rush_speakers/Snehendu_Roy.jpeg"
+      },
+       {
+        "name": "Dipan Srimany",
+        "image": "/project_dev_rush_speakers/Dipan_Srimany.jpeg"
+      }
+    ]
+  },
+  {
+    "date": "8th Apr",
+    "time": "7:00 PM",
+    "title": "React",
+    "speakers": [
+      {
+        "name": "Manobendra Mandal",
+        "image": "/project_dev_rush_speakers/Manobendra_Mandal.jpeg"
+      }
+    ]
+  },
+  {
+    "date": "11th Apr",
+    "time": "7:00 PM",
+    "title": "Project Workshop",
+    "speakers": [
+      {
+        "name": "Abhirup Banerjee",
+        "image": "/project_dev_rush_speakers/Abhirup_Banerjee.jpeg"
+      },
+      {
+        "name": "Mouli Chakraborty",
+        "image": "/project_dev_rush_speakers/Mouli_Chakraborty.jpeg"
+      }
+    ]
+  },
+  {
+    "date": "12th Apr",
+    "time": "7:00 PM",
+    "title": "Vibe Coding",
+    "speakers": [
+      {
+        "name": "Jishnu Baruah",
+        "image": "/project_dev_rush_speakers/Jishnu_Baruah.jpeg"
+      }
+    ]
+  },
+  {
+    "date": "15th Apr",
+    "time": "7:00 PM",
+    "title": "Motivation",
+    "speakers": [
+    ]
+  }
+]

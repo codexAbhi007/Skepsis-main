@@ -1,6 +1,6 @@
 import { ProjectDevRushHero } from "@/components/sections/ProjectDevRush/HeroSection";
 import { ProjectTracksSection } from "@/components/sections/ProjectDevRush/ProjectTracksSection";
-import { SessionTimelineSection } from "@/components/sections/ProjectDevRush/SessionTimelineSection";
+import { TimelineSection } from "@/components/sections/ProjectDevRush/TimelineSection";
 import { SpeakersSection } from "@/components/sections/ProjectDevRush/SpeakersSection";
 import { PrerequisitesSection } from "@/components/sections/ProjectDevRush/PrerequisitesSection";
 import { FAQSection } from "@/components/sections/ProjectDevRush/FAQSection";
@@ -10,7 +10,7 @@ import { CommunitiesSection } from "@/components/sections/ProjectDevRush/Communi
 export const metadata = {
   title: "Project Dev Rush | Skepsis",
   description:
-    "Join Project Dev Rush - A month-long coding challenge with Web Development and Machine Learning tracks",
+    "Join Project Dev Rush - A month-long coding challenge and learning",
 };
 
 export default function ProjectDevRushPage() {
@@ -18,8 +18,8 @@ export default function ProjectDevRushPage() {
     <div className="min-h-screen bg-white dark:bg-gray-950">
       <ProjectDevRushHero />
       {/* <ProjectTracksSection /> */}
-      {/* <SessionTimelineSection /> */}
       <SpeakersSection />
+      <TimelineSection />
       <PrerequisitesSection />
       <FAQSection />
       <LearningResourcesSection />
