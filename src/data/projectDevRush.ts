@@ -1,7 +1,7 @@
 export const projectDevRushData = {
   hero: {
     title: "Welcome to Project Dev Rush",
-    dateRange: "Starting 1st February 2026",
+    dateRange: "Starting 25th March 2026",
     countdownMessage: "Next session starting in",
   },
   projectTracks: [
@@ -38,22 +38,27 @@ export const projectDevRushData = {
     {
       track: "Web Development Sessions",
       sessions: [
-        { date: "1st Feb", time: "7:00 PM", title: "Intro & HTML CSS" },
-        { date: "4th Feb", time: "7:00 PM", title: "Javascript Fundamentals" },
-        { date: "7th Feb", time: "7:00 PM", title: "React Fundamentals" },
-        { date: "8th Feb", time: "7:00 PM", title: "Streamlit & FastAPI" },
-        { date: "11th Feb", time: "7:00 PM", title: "Express.js & MongoDB" },
+        { date: "25th Mar", time: "7:00 PM", title: "Orientation" },
+        { date: "28th Mar", time: "7:00 PM", title: "HTML & CSS" },
+        { date: "29th Mar", time: "7:00 PM", title: "Javascript Part 1" },
+        { date: "1st Apr", time: "7:00 PM", title: "Javascript Part 2" },
+        { date: "4th Apr", time: "7:00 PM", title: "Express, Node (Backend)" },
+        { date: "5th Apr", time: "7:00 PM", title: "Database (Backend)" },
+        { date: "8th Apr", time: "7:00 PM", title: "React" },
+        { date: "11th Apr", time: "7:00 PM", title: "Project Workshop" },
+        { date: "12th Apr", time: "7:00 PM", title: "Vibe Coding" },
+        { date: "15th Apr", time: "7:00 PM", title: "Motivation" },
       ],
     },
-    {
-      track: "Machine Learning Sessions",
-      sessions: [
-        { date: "15th Feb", time: "7:00 PM", title: "Intro to ML" },
-        { date: "18th Feb", time: "7:00 PM", title: "Computer Vision" },
-        { date: "21st Feb", time: "7:00 PM", title: "Natural Language Processing" },
-        { date: "22nd Feb", time: "7:00 PM", title: "Usage of AI Tools" }
-      ],
-    },
+    // {
+    //   track: "Machine Learning Sessions",
+    //   sessions: [
+    //     { date: "15th Feb", time: "7:00 PM", title: "Intro to ML" },
+    //     { date: "18th Feb", time: "7:00 PM", title: "Computer Vision" },
+    //     { date: "21st Feb", time: "7:00 PM", title: "Natural Language Processing" },
+    //     { date: "22nd Feb", time: "7:00 PM", title: "Usage of AI Tools" }
+    //   ],
+    // },
   ],
   prerequisites: {
     tools: [
@@ -83,12 +88,12 @@ export const projectDevRushData = {
         description: "For version control and collaboration",
         link: "https://github.com",
       },
-      {
-        icon: "Zap",
-        title: "Kaggle Account",
-        description: "For Machine learning track participants",
-        link: "https://kaggle.com",
-      },
+      // {
+      //   icon: "Zap",
+      //   title: "Kaggle Account",
+      //   description: "For Machine learning track participants",
+      //   link: "https://kaggle.com",
+      // },
       {
         icon: "Database",
         title: "MongoDB Atlas",

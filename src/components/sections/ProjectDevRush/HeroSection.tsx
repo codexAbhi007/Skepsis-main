@@ -66,9 +66,7 @@ export function ProjectDevRushHero() {
           const monthNumA = monthA ? monthMap[monthA] : 0;
           const monthNumB = monthB ? monthMap[monthB] : 0;
 
-          return monthNumA === monthNumB
-            ? dayA - dayB
-            : monthNumA - monthNumB;
+          return monthNumA === monthNumB ? dayA - dayB : monthNumA - monthNumB;
         });
 
         for (const session of sortedSessions) {
@@ -155,12 +153,12 @@ export function ProjectDevRushHero() {
       <div className="hidden sm:block absolute right-20 bottom-1/3 w-6 h-6 bg-blue-600 rounded-full"></div>
 
       <div className="text-center space-y-8 max-w-3xl mx-auto relative z-10">
-        {/* <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white">
           {projectDevRushData.hero.title}
-        </h1> */}
+        </h1>
 
         {/* TEMPORARY: Countdown + date + register button hidden (DO NOT DELETE) */}
-        {/*
+        
         <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400">
           {projectDevRushData.hero.dateRange}
         </p>
@@ -189,25 +187,25 @@ export function ProjectDevRushHero() {
                 </span>
               </div>
             ))}
-
-            <motion.a
-              href="https://luma.com/tx5pwhec"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block mt-8 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold text-lg rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Register Now
-            </motion.a>
           </div>
+
+          <motion.a
+            href="https://luma.com/tx5pwhec"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mt-12 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold text-lg rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Register Now
+          </motion.a>
         </div>
-        */}
+       
 
         {/* TEMPORARY MESSAGE */}
-        <p className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(168,85,247,0.35)]">
+        {/* <p className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(168,85,247,0.35)]">
           We will be back soon...
-        </p>
+        </p> */}
       </div>
 
       <div className="mt-16 md:mt-20 animate-bounce relative z-10">
