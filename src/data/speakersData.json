@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "name": "Manobendra Mandal",
+    "description": "Web developer with strong experience in building full-stack applications and Web3 systems. Worked on multiple hackathon-winning projects, focusing on real-world problem solving and scalable architecture. Currently working on contract-based product development in a startup , with growing expertise in low-level systems, backend engineering ( Rust, low level engineering), and modern web technologies.",
+    "profileImage": "/project_dev_rush_speakers/Manobendra_Mandal.jpeg",
+    "popupImage": "/project_dev_rush/2.png"
+  },
+  {
+    "id": 2,
+    "name": "Snehendu Roy",
+    "description": "Co founder, Silone Labs. Software dev with about 6 years of experience along with 3 years of professional experience working in companies like Rump Labs, Infinititech Partners. Scaled products like axicov, mantle devkit and won multiple hackathons.",
+    "profileImage": "/project_dev_rush_speakers/Snehendu_Roy.jpeg",
+    "popupImage": "/project_dev_rush/3.png"
+  },
+  {
+    "id": 3,
+    "name": "Abhirup Banerjee",
+    "description": "Co-founder, Silone Labs, Axicov. Prev DevRel @ HackQuest. Developer Relations Engineer and blockchain consultant with experience onboarding 2500+ developers across global ecosystems. Built and shipped production-grade Web3 products spanning DeFi, ZK systems, and protocol infrastructure. 14x hackathon winner with strong focus on developer experience, ecosystem growth, and scalable decentralized architecture.",
+    "profileImage": "/project_dev_rush_speakers/Abhirup_Banerjee.jpeg",
+    "popupImage": "/project_dev_rush/4.png"
+  },
+  {
+    "id": 4,
+    "name": "Sounak Dey",
+    "description": "Full-stack developer, Software developer in Silone Labs. Participated in 10+ hackathons with team. Currently focusing is on rapid building and shipping products across web2 and web3 domains.",
+    "profileImage": "/project_dev_rush_speakers/Sounak_Dey.jpeg",
+    "popupImage": "/project_dev_rush/5.png"
+  },
+  {
+    "id": 5,
+    "name": "Dipan Srimany",
+    "description": "I’m Dipan Srimany, a Full Stack MERN Developer turned DevOps Engineer at InfinitiTech Partners and a founding member of Silone Labs, a software engineering agency, passionate about building scalable, high-impact systems. I’ve engineered production platforms at StoriesDotFun and Lazarus Network, delivering performance-focused backend architectures for real users.",
+    "profileImage": "/project_dev_rush_speakers/Dipan_Srimany.jpeg",
+    "popupImage": "/project_dev_rush/6.png"
+  },
+  {
+    "id": 6,
+    "name": "Jishnu Baruah",
+    "description": "Currently working as a Blockchain SRE at InfStones. Skilled in Web3 and IoT technologies, with experience in web and mobile application development using React Native, Node.js, AWS, and distributed systems.",
+    "profileImage": "/project_dev_rush_speakers/Jishnu_Baruah.jpeg",
+    "popupImage": "/project_dev_rush/7.png"
+  },
+  {
+    "id": 7,
+    "name": "Mouli Chakraborty",
+    "description": "SWE @Launchnodes. Advocate @HackQuest. 7x Hackathon Winner. Gen AI and Blockchain Developer with strong experience in building decentralized and full-stack products. Worked extensively with smart contracts, zk-proofs, and cross-chain protocols. Currently developing innovative dApps like Mintellect.xyz and SatsFi.",
+    "profileImage": "/project_dev_rush_speakers/Mouli_Chakraborty.jpeg",
+    "popupImage": "/project_dev_rush/8.png"
+  }
+]

@@ -10,9 +10,12 @@ export function TimelineSection() {
   return (
     <section className="py-12 md:py-20 px-4 md:px-8 bg-gray-50 dark:bg-gray-900/40">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-10 md:mb-16 text-center text-gray-900 dark:text-white">
-          Session Timeline
-        </h2>
+         <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white inline-block relative">
+            Sessions Timeline
+            <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-1/3 h-1.5 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full" />
+          </h2>
+        </div>
 
         <div className="relative border-l-2 border-blue-200 dark:border-blue-800 ml-4 md:ml-8">
           {timelineData.map((session, index) => (

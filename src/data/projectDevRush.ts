@@ -47,7 +47,6 @@ export const projectDevRushData = {
         { date: "8th Apr", time: "7:00 PM", title: "React" },
         { date: "11th Apr", time: "7:00 PM", title: "Project Workshop" },
         { date: "12th Apr", time: "7:00 PM", title: "Vibe Coding" },
-        { date: "15th Apr", time: "7:00 PM", title: "Motivation" },
       ],
     },
     // {
