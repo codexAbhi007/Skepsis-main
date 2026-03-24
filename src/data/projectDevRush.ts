@@ -15,7 +15,6 @@ export const projectDevRushData = {
         "Upload Image → Get Meme Caption",
         "Uses Hugging Face BLIP for image understanding",
         "Meme text stays relevant to the photo (no random jokes)",
-        
       ],
       bgColor: "bg-blue-600 dark:bg-blue-900",
     },
@@ -103,19 +102,21 @@ export const projectDevRushData = {
   },
   faqs: [
     {
-      question: "How to choose a project?",
+      question: "What is Project Dev Rush?",
       answer:
-        "You can choose based on your interest and skill level. The Web Development Track is suitable for beginners, while the Machine Learning Track requires basic Python knowledge. Consider your career goals and the technologies you want to learn.",
+        "A hands-on program where you learn by building a real project step by step.",
     },
     {
-      question: "Can I pick both projects?",
-      answer:
-        "Yes, you can pick both projects if you have the time and commitment. However, we recommend focusing on one project to get the maximum learning experience and complete it successfully.",
+      question: "Do I need prior experience?",
+      answer: "No, everything will be taught as you build.",
     },
     {
-      question: "I use a different tech stack than the ones taught",
-      answer:
-        "That's absolutely fine! The core concepts remain the same across different tech stacks. You can apply the same principles using your preferred technology. Feel free to reach out to mentors for guidance.",
+      question: "Will I get help if I get stuck?",
+      answer: "Yes, mentors will guide you during and beyond sessions.",
+    },
+    {
+      question: "What technologies will be covered?",
+      answer: "HTML, CSS, JavaScript, React, backend, databases, and basic AI",
     },
   ],
   resources: {

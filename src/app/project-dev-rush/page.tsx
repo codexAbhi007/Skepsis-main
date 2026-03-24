@@ -22,7 +22,7 @@ export default function ProjectDevRushPage() {
       <TimelineSection />
       <PrerequisitesSection />
       <FAQSection />
-      <LearningResourcesSection />
+      {/* <LearningResourcesSection /> */}
       <CommunitiesSection />
     </div>
   );

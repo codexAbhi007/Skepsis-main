@@ -52,7 +52,7 @@ export function SpeakersSection() {
                   className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3"
                 >
                   <div className="p-2 h-full">
-                    {/* 🔥 Dialog Wrapper */}
+              
                     <Dialog>
                       <DialogTrigger asChild>
                         <div className="cursor-pointer h-full p-6 sm:p-8 rounded-3xl border border-gray-200/50 dark:border-white/10 bg-white/40 dark:bg-gray-900/40 backdrop-blur-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgb(0,0,0,0.2)] hover:-translate-y-2 hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] dark:hover:shadow-[0_20px_40px_rgb(0,0,0,0.3)] transition-all duration-300 group flex flex-col items-center text-center">
@@ -65,7 +65,7 @@ export function SpeakersSection() {
                                 fill
                                 className="object-cover group-hover:scale-110 transition-transform duration-500 object-top"
                                 onError={(e) => {
-                                  // Fallback gracefully if image is not uploaded yet
+                              
                                   e.currentTarget.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(speaker.name)}&background=random`;
                                 }}
                               />
@@ -73,9 +73,30 @@ export function SpeakersSection() {
                           </div>
 
                           {/* Content */}
-                          <h3 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-3">
-                            {speaker.name}
-                          </h3>
+                          <div className="flex items-center justify-center gap-2 mb-3">
+                            <h3 className="text-lg md:text-xl font-bold text-gray-900 dark:text-white">
+                              {speaker.name}
+                            </h3>
+                            {speaker.linkedin && (
+                              <a
+                                href={speaker.linkedin}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors"
+                                onClick={(e) => e.stopPropagation()}
+                                aria-label={`${speaker.name}'s LinkedIn`}
+                              >
+                                <svg
+                                  className="w-5 h-5"
+                                  fill="currentColor"
+                                  viewBox="0 0 24 24"
+                                  aria-hidden="true"
+                                >
+                                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                </svg>
+                              </a>
+                            )}
+                          </div>
                           <p className="text-sm md:text-base text-gray-600 dark:text-gray-400 line-clamp-3 leading-relaxed">
                             {speaker.description}
                           </p>

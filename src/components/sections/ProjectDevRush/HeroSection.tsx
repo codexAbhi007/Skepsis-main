@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { projectDevRushData } from "@/data/projectDevRush";
 import { ChevronDown } from "lucide-react";
@@ -128,7 +129,7 @@ export function ProjectDevRushHero() {
   }, []);
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-4 py-16 md:py-20 relative overflow-hidden bg-white dark:bg-gray-950">
+    <section className="min-h-screen flex flex-col items-center justify-center px-4 relative overflow-hidden bg-white dark:bg-gray-950">
       <div className="hidden sm:block absolute left-0 top-1/4 w-96 h-96 bg-blue-300 dark:bg-blue-800/60 rounded-full blur-3xl opacity-60"></div>
 
       <div className="hidden lg:block absolute left-12 top-1/3">
@@ -158,14 +159,21 @@ export function ProjectDevRushHero() {
 
       <div className="hidden sm:block absolute right-20 bottom-1/3 w-6 h-6 bg-blue-600 rounded-full"></div>
 
-      <div className="text-center space-y-8 max-w-3xl mx-auto relative z-10">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white">
-          {projectDevRushData.hero.title}
+      <div className="text-center space-y-8 max-w-4xl mx-auto relative z-10 w-full px-4">
+        <h1 className="relative w-full max-w-3xl h-24 md:h-36 lg:h-48 xl:h-56 mx-auto flex items-center justify-center">
+          <span className="sr-only">{projectDevRushData.hero.title}</span>
+          <Image
+            src="/project_dev_rush/RELAUNCHED.png"
+            alt={projectDevRushData.hero.title}
+            fill
+            priority
+            className="object-contain"
+          />
         </h1>
 
         {/* TEMPORARY: Countdown + date + register button hidden (DO NOT DELETE) */}
 
-        <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400">
+        <p className="text-lg md:text-4xl text-gray-600 dark:text-gray-200">
           {projectDevRushData.hero.dateRange}
         </p>
 
