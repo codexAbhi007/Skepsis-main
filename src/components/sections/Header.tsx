@@ -14,15 +14,10 @@ export function Header() {
 
   useEffect(() => {
     setIsMounted(true);
-    // Check if dark mode is enabled in localStorage or system preference
-    const isDarkMode =
-      localStorage.getItem("theme") === "dark" ||
-      (!localStorage.getItem("theme") &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches);
-    setIsDark(isDarkMode);
-    if (isDarkMode) {
-      document.documentElement.classList.add("dark");
-    }
+    // Always default to light theme on initial load
+    setIsDark(false);
+    document.documentElement.classList.remove("dark");
+    localStorage.setItem("theme", "light");
   }, []);
 
   const toggleTheme = () => {
@@ -64,10 +59,10 @@ export function Header() {
                 item === "team"
                   ? "/teams"
                   : item === "PDR"
-                  ? "/project-dev-rush"
-                  : item === "certificate"
-                    ? "/certificate"
-                    : `/#${item}`
+                    ? "/project-dev-rush"
+                    : item === "certificate"
+                      ? "/certificate"
+                      : `/#${item}`
               }
               className="text-sm font-medium capitalize text-gray-900 dark:text-gray-100 hover:text-gray-600 dark:hover:text-gray-400 transition-colors duration-200 ease-in-out py-2 md:py-0 px-4 md:px-0"
             >
