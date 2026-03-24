@@ -1,7 +1,7 @@
 export const projectDevRushData = {
   hero: {
     title: "Welcome to Project Dev Rush",
-    dateRange: "Starting 25th March 2026",
+    dateRange: "Starts from 25th March, 2026",
     countdownMessage: "Next session starting in",
   },
   projectTracks: [
