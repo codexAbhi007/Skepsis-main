@@ -8,7 +8,7 @@ import { generateCertificateFromPDF } from "@/utils/generateCertificateFromPDF";
 type Props = {
   name: string;
   rank: number;
-  event: "cquest" | "dsaquest";
+  event: "cquest" | "dsaquest" | "pdrparticipation" | "pdrappreciation";
 };
 
 export default function DownloadButton({ name, rank, event }: Props) {
@@ -33,16 +33,22 @@ export default function DownloadButton({ name, rank, event }: Props) {
       });
 
       const url = URL.createObjectURL(blob);
+
       const a = document.createElement("a");
       a.href = url;
       a.download = `${name}-certificate.pdf`;
+
       document.body.appendChild(a);
       a.click();
       a.remove();
+
       URL.revokeObjectURL(url);
     } catch (err) {
-      console.error(err);
-      alert("Failed to generate certificate");
+      console.error("Certificate generation error:", err);
+
+      const message = err instanceof Error ? err.message : String(err);
+
+      alert(`Failed to generate certificate:\n\n${message}`);
     } finally {
       lock.current = false;
     }
